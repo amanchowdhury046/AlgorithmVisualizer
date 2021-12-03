@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="sidebar">
+                    <h3>Algorithm<br>Visualizer</h3>
+                    <h4>Contact</h4>
+                    <br><br>
+                    <div class="mytest1">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_content">
+                    <div class="header">Welcome!! Have a nice day.
+                        <label class="switch">
+                            <input type="checkbox" onclick="myFunction()">
+                            <span class="slider round"></span>
+                        </label>
+                        <h5 style="float: right; margin-right: 15px; margin-top: 4px;">Dark-Mode</h5>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <section>
+        <div class="row">
+            <div class="column" style="background-color:#9B2335; width: 60%;">
+                <h4 style="margin-left: 220px;">Click below button to see Demo</h4>
+                <a href="index.html" class="myButton1" style="margin-left: 220px;">Demo</a>
+            </div>
+            <div class="column" style="background-color:#BC243C; width: 40%;">
+                <h4>Click below button to see Code</h4>
+                <a href="#" class="myButton1">Code</a>
+            </div>
+        </div>
+    </section>
+    <hr class="hrr">
+    <footer class="footer">
+        <p class="create">
+            Created with <i class="fa fa-heart" style="color: #eb2c13"></i> by Aman
+        </p>
+    </footer>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithm Visualizer</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      <div class="wrapper">
+
+        <!--Sidebar of index page-->
+        <div class="sidebar">
+          <h3>Algorithm<br>Visualizer</h3>
+          <p>Start Visualizing</p>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle myButton" type="button" data-toggle="dropdown">Select
+              Algorithm
+              <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a class="mytest" href="#">Bubble Sort</a></li>
+              <li><a class="mytest" href="#">Selection Sort</a></li>
+              <li><a class="mytest" href="#">Insertion Sort</a></li>
+              <li><a class="mytest" href="#">Merge Sort</a></li>
+              <li><a class="mytest" href="#">Quick Sort</a></li>
+              <li><a class="mytest" href="#">Heap Sort</a></li>
+            </ul>
+          </div>
+          <br><br>
+          <div class="mytest1">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="array-inputs">
+            <p style="color: aliceblue;">Size of the array:</p>
+            <input id="a_size" type="range" min=10 max=30 step=1 value=3><br>
+            <p style="color: aliceblue;">Speed of the algorithm:</p>
+            <input id="a_speed" type="range" min=1 max=5 step=1 value=4><br>
+            <button id="a_generate">Generate New Array!</button>
+          </div>
+        </div>
+
+        <!--Upper part of index page-->
+        <div class="main_content">
+          <div class="header">Welcome!! Have a nice day.
+            <label class="switch">
+              <input type="checkbox" onclick="myFunction()">
+              <span class="slider round"></span>
+            </label>
+            <h5 style="float: right; margin-right: 15px; margin-top: 4px;">Dark-Mode</h5>
+            <button class="myButton1" id="but1"
+              style="margin-left: 285px; padding: 4px 4px; margin-top: -3px; font-size: 12px; margin-bottom: -20px;">How
+              To Use</button>
+          </div>
+          <div class="info" id="array_container">
+          </div>
+        </div>
+        <div class="fuls">
+          <div>
+            <button id="but2"
+              style="float: right; margin-right: 20px; margin-top: 20px; font-weight: bold; color: black;">X</button>
+            <h4>How To Use</h4>
+            <ul>
+              <li>Step-1: From the left Sidebar choose the array size.</li>
+              <li>Step-2: After that choose Speed of algorithm.</li>
+              <li>Step-3: Click on generate array to choose random array everytime.</li>
+              <li>Step-4: After that choose the algorithm you want to apply.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <hr class="hrr">
+
+  <!--Footer Section-->
+  <footer class="footer">
+    <div class="square" style="background-color: blue; margin-left: 225px;">
+      <p>Initial&nbspPosition</p>
+    </div>
+    <div class="square" style="background-color: yellow; margin-left: 115px;">
+      <p>Comparison</p>
+    </div>
+    <div class="square" style="background-color: red; margin-left: 100px;">
+      <p>Swap</p>
+    </div>
+    <div class="square" style="background-color: green; margin-left: 60px;">
+      <p>Element&nbspis&nbspin&nbspsorted&nbspposition</p>
+    </div><br><br>
+
+    <h4>Note: Read About Section for description of every sorting algorithm</h4>
+    <p class="create">
+      Created with <i class="fa fa-heart" style="color: #eb2c13"></i> by Aman
+    </p>
+  </footer>
+
+  <!--All javascript files-->
+
+  <script src="./scripts/main.js"></script>
+  <!--This should be at the end of body and should be loaded before sorts.js-->
+  <script src="./scripts/visualizations.js"></script>
+  <!--This should be loaded after main.js-->
+
+  <script src="./scripts/bubble_sort.js"></script>
+  <script src="./scripts/selection_sort.js"></script>
+  <script src="./scripts/insertion_sort.js"></script>
+  <script src="./scripts/merge_sort.js"></script>
+  <script src="./scripts/quick_sort.js"></script>
+  <script src="./scripts/heap_sort.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-submenu a.test').on("click", function (e) {
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+  </script>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#but1").click(function () {
+        $(".fuls").fadeTo(200, 1);
+      });
+      $("#but2").click(function () {
+        $(".fuls").fadeOut(200);
+      });
+    });
+  </script>
+</body>
+
+</html>

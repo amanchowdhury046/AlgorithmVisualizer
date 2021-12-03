@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="wrapper">
+
+                <!--Sidebar-->
+                <div class="sidebar">
+                    <h3>Algorithm<br>Visualizer</h3>
+                    <h4 style="text-align: center; font-weight: bold; color: white;">About Algorithms</h4> <br><br>
+                    <div class="mytest1">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Upper side part-->
+                <div class="main_content">
+                    <div class="header">Welcome!! Have a nice day.
+                        <label class="switch">
+                            <input type="checkbox" onclick="myFunction()">
+                            <span class="slider round"></span>
+                        </label>
+                        <h5 style="float: right; margin-right: 15px; margin-top: 4px;">Dark-Mode</h5>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--The main Section-->
+    <section class="section">
+        <h3><u>Bubble Sort</u></h3>
+        <p>
+            Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps
+            through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through
+            the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the
+            way smaller or larger elements "bubble" to the top of the list.
+        </p>
+        <h4><u>Time Complexity</u></h4>
+        <p>
+        <ul class="list">
+            <li>Best Case Time Complexity :- O(N)</li>
+            <li>Average Case Time Complexity :- O(N<sup>2</sup>)</li>
+            <li>Worst Case Time Complexity :- O(N<sup>2</sup>)</li>
+        </ul>
+        </p>
+        <hr class="hrr">
+
+        <h3><u>Selection Sort</u></h3>
+        <p>
+            The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending
+            order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given
+            array.<br>
+            1) The subarray which is already sorted.<br>
+            2) Remaining subarray which is unsorted.<br>
+            In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted
+            subarray is picked and moved to the sorted subarray.
+        </p>
+        <h4><u>Time Complexity</u></h4>
+        <p>
+        <ul class="list">
+            <li>Best Case Time Complexity :- O(N<sup>2</sup>)</li>
+            <li>Average Case Time Complexity :- O(N<sup>2</sup>)</li>
+            <li>Worst Case Time Complexity :- O(N<sup>2</sup>)</li>
+        </ul>
+        </p>
+        <hr class="hrr">
+
+        <h3><u>Insertion Sort</u></h3>
+        <p>
+            Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your
+            hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are
+            picked and placed at the correct position in the sorted part.
+        </p>
+        <h4><u>Time Complexity</u></h4>
+        <p>
+        <ul class="list">
+            <li>Best Case Time Complexity :- O(N)</li>
+            <li>Average Case Time Complexity :- O(N<sup>2</sup>)</li>
+            <li>Worst Case Time Complexity :- O(N<sup>2</sup>)</li>
+        </ul>
+        </p>
+        <hr class="hrr">
+
+        <h3><u>Quick Sort</u></h3>
+        <p>
+            Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions
+            the given array around the picked pivot. There are many different versions of quickSort that pick pivot in
+            different ways.
+            <br>
+            1) Always pick first element as pivot.<br>
+            2) Always pick last element as pivot.<br>
+            3) Pick a random element as pivot.<br>
+            4) Pick median as pivot.<br>
+            The key process in quickSort is partition(). Target of partitions is, given an array and an element x of
+            array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x)
+            before x, and put all greater elements (greater than x) after x. All this should be done in linear time.
+        </p>
+        <h4><u>Time Complexity</u></h4>
+        <p>
+        <ul class="list">
+            <li>Best Case Time Complexity :- O(NlogN)</li>
+            <li>Average Case Time Complexity :- O(NlogN)</li>
+            <li>Worst Case Time Complexity :- O(N<sup>2</sup>)</li>
+        </ul>
+        </p>
+        <hr class="hrr">
+
+        <h3><u>Heap Sort</u></h3>
+        <p>
+            heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort:
+            like selection sort, heapsort divides its input into a sorted and an unsorted region, and it iteratively
+            shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted
+            region. Unlike selection sort, heapsort does not waste time with a linear-time scan of the unsorted region;
+            rather, heap sort maintains the unsorted region in a heap data structure to more quickly find the largest
+            element in each step.
+
+            Although somewhat slower in practice on most machines than a well-implemented quicksort, it has the
+            advantage of a more favorable worst-case O(n log n) runtime. Heapsort is an in-place algorithm, but it is
+            not a stable sort.
+        </p>
+        <h4><u>Time Complexity</u></h4>
+        <p>
+        <ul class="list">
+            <li>Best Case Time Complexity :- O(NlogN)</li>
+            <li>Average Case Time Complexity :- O(NlogN)</li>
+            <li>Worst Case Time Complexity :- O(NlogN)</li>
+        </ul>
+        </p>
+    </section>
+
+    <hr class="hrr">
+
+    <!--Footer of about page-->
+    <footer class="footer">
+        <p class="create">
+            Created with <i class="fa fa-heart" style="color: #eb2c13"></i> by Aman
+        </p>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
